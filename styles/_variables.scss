@@ -1,0 +1,18 @@
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+@mixin shadows {
+  box-shadow: -6px -6px 9px #fff, 6px 6px 9px rgba(#000, 0.35);
+}
+@mixin shadows-light {
+  box-shadow: -3px -3px 6px #fff, 3px 3px 6px rgba(#000, 0.25);
+}
+@mixin shadows-ins {
+  box-shadow: inset -6px -6px 9px #fff, inset 6px 6px 9px rgba(#000, 0.35);
+}
+
+$minorange: #e85d04;
+$rasp: #720026;
