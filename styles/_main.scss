@@ -52,7 +52,8 @@ button {
     @include shadows-ins;
   }
 }
-.op_key {
+.op_key,
+.eq_key {
   color: $rasp;
   font-weight: 500;
 }

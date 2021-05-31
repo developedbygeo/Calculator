@@ -77,7 +77,8 @@ button:active {
   box-shadow: inset -6px -6px 9px #fff, inset 6px 6px 9px rgba(0, 0, 0, 0.35);
 }
 
-.op_key {
+.op_key,
+.eq_key {
   color: #720026;
   font-weight: 500;
 }
