@@ -1,0 +1,19 @@
+@media screen and (max-width: 480px) {
+  main {
+    padding: 1.2rem;
+    min-height: 90vh;
+    min-width: 95vw;
+    input {
+      height: 8rem;
+    }
+  }
+  .key {
+    gap: 2.3rem;
+    margin: 3rem auto;
+  }
+  .display {
+    top: 4%;
+    left: 88%;
+    font-size: 1.5rem;
+  }
+}

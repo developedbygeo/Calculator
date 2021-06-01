@@ -15,10 +15,11 @@
   </head>
   <body>
     <main>
-      <input type="number" value="1" default="0" class="input_number" />
+      <div class="display">0</div>
+      <input type="string" value="1" default="0" class="input_number" />
       <div class="key">
         <button class="op_key clear" op="clear">C</button>
-        <button class="op_key" op="additive">+/-</button>
+        <button class="op_key additive" op="additive">+/-</button>
         <button class="op_key" op="perc">%</button>
         <button class="op_key" op="division">/</button>
         <button class="num_key">7</button>
@@ -29,13 +30,13 @@
         <button class="num_key">5</button>
         <button class="num_key">6</button>
         <button class="op_key" op="sub">-</button>
-        <button class="num_key">1</button>
+        <button accesskey="1" class="num_key">1</button>
         <button class="num_key">2</button>
         <button class="num_key">3</button>
         <button class="op_key" op="add">+</button>
         <span></span>
-        <button class="num_key" op="division">0</button>
-        <button class="num_key" op="division">.</button>
+        <button class="num_key">0</button>
+        <button class="num_key dot" op="dot">.</button>
         <button class="eq_key">=</button>
       </div>
     </main>
