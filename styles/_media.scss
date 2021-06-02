@@ -1,43 +1,35 @@
-@media screen and (min-width: 350px) and (max-width: 410px) {
-  main {
-    padding: 1.2rem;
-    min-height: 75vh;
-    min-width: 95vw;
-    border-radius: 4rem;
-    box-shadow: -6px -6px 9px #fff, 3px 3px 6px rgba(0, 0, 0, 0.35);
-    input {
-      height: 8rem;
-    }
+@media screen and (max-width: 480px) and (min-height: 640px) {
+  html {
+    font-size: 56.5%;
+  }
+  main input {
+    height: 7rem;
   }
   .key {
-    gap: 2.3rem;
-    margin: 3rem auto;
+    grid-gap: 3rem;
+    margin: 3rem 0.5rem;
   }
-  .display {
-    top: 4%;
-    font-size: 1.5rem;
+  .input_number {
+    width: 100%;
   }
 }
-@media screen and (max-width: 349px) {
+@media screen and (max-width: 320px) and (max-height: 569px) {
+  html {
+    font-size: 53.5%;
+  }
   main {
-    padding: 0;
-    min-width: 95vw;
-    min-height: 90vh;
-    input {
-      width: 100%;
-      margin-top: 0.3rem;
-      font-size: 1.75rem;
-    }
+    width: 95vw;
   }
   .key {
-    margin: 5%;
-    column-gap: 0.75rem;
     grid-gap: 1rem;
-    margin-top: 1.5rem;
-    button {
-      width: 3rem;
-      height: 3rem;
-      font-size: 1.6rem;
-    }
+  }
+}
+
+@media screen and (max-width: 240px) {
+  html {
+    font-size: 41.5%;
+  }
+  .key {
+    grid-gap: 1.3rem;
   }
 }
