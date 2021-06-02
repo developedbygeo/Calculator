@@ -1,13 +1,29 @@
 const input = document.querySelector(".input_number");
 const numkeys = document.querySelectorAll(".num_key");
-const equal = document.querySelector(".eq_key");
 const numlist = [];
+const display = document.querySelector(".display");
+let dotActive = false;
+
+// Buttons
 const equalBtn = document.querySelector(".eq_key");
 const clearBtn = document.querySelector(".clear");
 const additiveBtn = document.querySelector(".additive");
-const display = document.querySelector(".display");
+const divideBtn = document.querySelector(".divide");
+const multiplyBtn = document.querySelector(".multiply");
+const subBtn = document.querySelector(".subtract");
+const addBtn = document.querySelector(".add");
+const num9 = document.querySelector(".btn9");
+const num8 = document.querySelector(".btn8");
+const num7 = document.querySelector(".btn7");
+const num6 = document.querySelector(".btn6");
+const num5 = document.querySelector(".btn5");
+const num4 = document.querySelector(".btn4");
+const num3 = document.querySelector(".btn3");
+const num2 = document.querySelector(".btn2");
+const num1 = document.querySelector(".btn1");
+const num0 = document.querySelector(".btn0");
 const dotBtn = document.querySelector(".dot");
-let dotActive = false;
+//
 
 numkeys.forEach((key) => {
   key.addEventListener("click", (e) => {
@@ -91,3 +107,65 @@ additiveBtn.onclick = () => {
   input.value = -parseFloat(input.value);
   display.innerText = "";
 };
+
+document.addEventListener("keydown", (e) => {
+  switch (e.key) {
+    case "9":
+      num9.click();
+      break;
+    case "8":
+      num8.click();
+      break;
+    case "7":
+      num7.click();
+      break;
+    case "6":
+      num6.click();
+      break;
+    case "5":
+      num5.click();
+      break;
+    case "4":
+      num4.click();
+      break;
+    case "3":
+      num3.click();
+      break;
+    case "2":
+      num2.click();
+      break;
+    case "1":
+      num1.click();
+      break;
+    case "0":
+      num1.click();
+      break;
+    case "C":
+      clearBtn.click();
+      break;
+    case "c":
+      clearBtn.click();
+      break;
+    case ".":
+      dotBtn.click();
+      break;
+    case "+":
+      addBtn.click();
+      break;
+    case "-":
+      subBtn.click();
+      break;
+    case "*":
+      multiplyBtn.click();
+      break;
+    case "/":
+      divideBtn.click();
+      break;
+    case "*":
+      multiplyBtn.click();
+      break;
+    case "Enter":
+      equalBtn.click();
+      break;
+  }
+});
