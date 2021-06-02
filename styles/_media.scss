@@ -1,8 +1,10 @@
 @media screen and (max-width: 480px) {
   main {
     padding: 1.2rem;
-    min-height: 85vh;
+    min-height: 75vh;
     min-width: 95vw;
+    border-radius: 4rem;
+    box-shadow: -6px -6px 9px #fff, 3px 3px 6px rgba(0, 0, 0, 0.35);
     input {
       height: 8rem;
     }
@@ -13,7 +15,6 @@
   }
   .display {
     top: 4%;
-    left: 88%;
     font-size: 1.5rem;
   }
 }

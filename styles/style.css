@@ -97,14 +97,17 @@ button:active {
 }
 
 .eq_key {
-  color: #1b4332;
+  color: #20523d;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 480px) {
   main {
     padding: 1.2rem;
-    min-height: 90vh;
+    min-height: 75vh;
     min-width: 95vw;
+    border-radius: 4rem;
+    box-shadow: -6px -6px 9px #fff, 3px 3px 6px rgba(0, 0, 0, 0.35);
   }
   main input {
     height: 8rem;
@@ -115,7 +118,6 @@ button:active {
   }
   .display {
     top: 4%;
-    left: 88%;
     font-size: 1.5rem;
   }
 }
